@@ -1,0 +1,3 @@
+package com.apps.bilaleluneis.raspberrypirainbowhat.hardwareabstraction
+
+abstract class AbstractRGBStrip

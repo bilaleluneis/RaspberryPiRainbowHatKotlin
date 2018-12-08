@@ -13,8 +13,7 @@ class ColorUnitTest {
 
     @Test
     fun obtain_rgb_from_color_test(){
-        val redColor = Color(255, 0, 0)
-        val rgbValue = redColor.rgb
+        val rgbValue = colors["red"]?.rgb ?: Triple(0,0,0)
         assert((rgbValue.first == 255 && rgbValue.second == 0 && rgbValue.third == 0))
     }
 

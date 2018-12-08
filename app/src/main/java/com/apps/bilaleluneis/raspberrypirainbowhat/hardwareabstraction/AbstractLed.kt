@@ -6,11 +6,13 @@ package com.apps.bilaleluneis.raspberrypirainbowhat.hardwareabstraction
  * bilaleluneis@gmail.com
  * @link https://github.com/bilaleluneis/RaspberryPiRainbowHat/blob/master/rainbow_shield_abstract_impl.py
  */
-abstract class AbstractLed (val identifier: Int){
+abstract class AbstractLed(val index: Int) {
 
-    abstract fun on()
-    abstract fun off()
-    abstract fun blink()
+    var isOn: Boolean = false
+        private set
+
+    fun on(){ isOn = true }
+    fun off(){ isOn = false}
 
 }
 
